@@ -3,7 +3,14 @@ require 'pry-byebug'
 # but you may remove it if you like.
 
 def fibonacci(n)
-  # your code here :)
+  if n == 1
+    1
+  elsif n == 2
+    1
+  else
+    fibonacci(n-1) + fibonacci(n-2)
+  end
+  n
 end
 
 Pry.start
